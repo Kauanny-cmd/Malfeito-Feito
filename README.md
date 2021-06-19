@@ -5,9 +5,9 @@
 ### O projeto em si foi inspirado nos aplicativos de gerenciamento de projetos, [Trello](https://trello.com/pt-BR), e Microsoft [To Do](https://todo.microsoft.com/tasks/pt-br/), com o intúito de auxiliar nós estudantes e demais pessoas na organização das nossas tarefas do dia a dia.
 
 ### Especificações:
-* O sistema contará com uma interface interativa, onde o usuário pode "cadastrar" ou adicionar a sua tarefa, na qual deseja executar durante o mesmo dia ou em decorer dos demais;
-* Além disso, contaremos com a opção de personalizar a nossa tarefa, como por exemplo, a possibilidade de adiconarmos cores em cada afazer;
-* E por fim, a opção de compartilhamos certa tarefa com outras pessoas.
+* O sistema contará com uma interface interativa, onde o usuário pode "cadastrar" ou adicionar a sua tarefa, na qual deseja executá-la durante o mesmo dia ou em decorer dos demais;
+* Além disso, contaremos com a opção de personalizar a nossa tarefa, como por exemplo, a possibilidade de adicionarmos cores em cada afazer;
+* E por fim, a opção de adição de membros no desenvolver do ofício.
 
 > V. Kauanny®
 
