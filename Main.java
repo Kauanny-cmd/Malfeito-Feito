@@ -9,6 +9,7 @@ class Main {
     int tarefaQuinta = 4;
     int tarefaSexta = 1;
     int tarefaSabado = 0;
+    String MaisTarefa = "sim";
 
 // Contagem de tarefas semanais
     int tarefaSemanal = tarefaDomingo + tarefaSegunda + tarefaTerca + tarefaQuarta + tarefaQuinta + tarefaSexta + tarefaSabado;
@@ -31,6 +32,26 @@ class Main {
     }else{
       System.out.println("Olá " + usuario + "!");
       System.out.println("Você não tem nenhuma tarefa essa semana!");
-    } 
+    }
+
+// Pergunta sobre a opção de mais tarefas
+    System.out.println("Vamos adicionar mais tarefas?");
+    switch(MaisTarefa){
+      case "sim": System.out.println("Vamos lá então");
+      break;
+      case "Sim": System.out.println("Vamos lá então");
+      break;
+      case "s": System.out.println("Vamos lá então");
+      break;
+      case "não": System.out.println("Ok, sem mais tarefas");
+      break;
+      case "Não": System.out.println("Ok, sem mais tarefas");
+      break;
+      case "nao": System.out.println("Ok, sem mais tarefas");
+      break;
+      case "n": System.out.println("Ok, sem mais tarefas");
+      break;
+      default: System.out.println("Responda com 'sim' ou 'não'");
+    }
   }
 }
