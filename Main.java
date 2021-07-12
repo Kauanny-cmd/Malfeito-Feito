@@ -53,5 +53,26 @@ class Main {
       break;
       default: System.out.println("Responda com 'sim' ou 'não'");
     }
+
+// Semana
+    // int DiasSemana = 0;
+    // int dia = 0;
+  //Exemplo com do while
+    // do{
+    //   dia++;
+    //   DiasSemana++;
+    // }
+    // while(DiasSemana<=7);
+  //Exemplo com while 
+    // while(DiasSemana < 7){
+    //   dia++;
+    //   DiasSemana++;
+    // }
+  //Exemplo com for
+    // for(dia = 0; DiasSemana < 7; dia++){
+    //   DiasSemana++;
+    // }
+    // System.out.println(dia);
+    // System.out.println(DiasSemana);
   }
 }
