@@ -10,6 +10,7 @@ class Main {
     int tarefaSexta = 1;
     int tarefaSabado = 0;
     String MaisTarefa = "sim";
+    int tarefas = 1;
 
 // Contagem de tarefas semanais
     int tarefaSemanal = tarefaDomingo + tarefaSegunda + tarefaTerca + tarefaQuarta + tarefaQuinta + tarefaSexta + tarefaSabado;
@@ -35,6 +36,7 @@ class Main {
     }
 
 // Pergunta sobre a opção de mais tarefas
+  do{
     System.out.println("Vamos adicionar mais tarefas?");
     switch(MaisTarefa){
       case "sim": System.out.println("Vamos lá então");
@@ -52,17 +54,14 @@ class Main {
       case "n": System.out.println("Ok, sem mais tarefas");
       break;
       default: System.out.println("Responda com 'sim' ou 'não'");
+      tarefas--;
     }
+  }
+  while(tarefas==0);
 
 // Semana
     // int DiasSemana = 0;
     // int dia = 0;
-  //Exemplo com do while
-    // do{
-    //   dia++;
-    //   DiasSemana++;
-    // }
-    // while(DiasSemana<=7);
   //Exemplo com while 
     // while(DiasSemana < 7){
     //   dia++;
