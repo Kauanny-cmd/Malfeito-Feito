@@ -15,7 +15,7 @@ public class Main {
     int tarefaSabado = 0;
 
     // String MaisTarefa = "sim";
-    // int tarefas = 1;
+     int tarefas = 1;
 
 
 // Boas vindas
