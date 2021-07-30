@@ -39,10 +39,9 @@ public class Main {
     // }
 
     // Contagem de tarefas semanais
-    int tarefaSemanal = tarefaDomingo + tarefaSegunda + tarefaTerca + tarefaQuarta + tarefaQuinta + tarefaSexta
-        + tarefaSabado;
+    /* int tarefaSemanal = tarefaDomingo + tarefaSegunda + tarefaTerca + tarefaQuarta + tarefaQuinta + tarefaSexta + tarefaSabado;
 
-    boolean comTarefa = (tarefaSemanal > 0);
+    boolean comTarefa = (tarefaSemanal > 0); */
     // boolean semTarefa = (!comTarefa);
 
     // Observando tarefas
