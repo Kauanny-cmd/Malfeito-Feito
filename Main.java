@@ -5,7 +5,7 @@ public class Main {
     // Variantes de desenvolvimento
     Scanner leitor = new Scanner(System.in);
 
-    int tarefaDomingo = 0;
+    
     int tarefaSegunda = 0;
     int tarefaTerca = 0;
     int tarefaQuarta = 0;
@@ -20,23 +20,7 @@ public class Main {
     Tarefas.BoasVindas();
 
     // Add tarefas
-    System.out.println("Quantas tarefas você deseja adicionar para Domingo?");
-    tarefaDomingo = leitor.nextInt();
-
-    System.out.println("Perfeito!");
-    System.out.println("Agora, escreva, quais são elas:");
-
-    String[] listaDomingo = new String[tarefaDomingo];
-
-    int i = 0;
-
-    for (i = 0; i < tarefaDomingo; i++) {
-      listaDomingo[i] = leitor.next();
-    }
-
-    // for(i = 0; i < tarefaDomingo; i++){
-    // System.out.println(listaDomingo[i]);
-    // }
+    Tarefas.AdicionaTarefas();
 
     // Contagem de tarefas semanais
     /* int tarefaSemanal = tarefaDomingo + tarefaSegunda + tarefaTerca + tarefaQuarta + tarefaQuinta + tarefaSexta + tarefaSabado;
