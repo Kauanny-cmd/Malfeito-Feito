@@ -3,7 +3,9 @@ import java.util.ArrayList;
 
 public class Tarefas {
 
+    private Scanner leitor = new Scanner(System.in);
     private ArrayList<String> listaDeTarefas = new ArrayList<String>();
+    private int QuantidadeTarefa;
     private int cont = 1;
 
 
@@ -12,8 +14,6 @@ public class Tarefas {
     }
 
     public void AdicionaTarefas() {
-        Scanner leitor = new Scanner(System.in);
-        int QuantidadeTarefa = 0;
 
         System.out.println("\n Quantas tarefas você deseja adicionar?");
         QuantidadeTarefa = leitor.nextInt();
@@ -27,6 +27,7 @@ public class Tarefas {
     }
 
     public void MostrarTarefas(String usuario) {
+        listaDeTarefas.remove(0);
         System.out.println("\n As tarefas são:");
         if(listaDeTarefas.size() > 0){
             for (String tarefa : listaDeTarefas) {
@@ -36,4 +37,13 @@ public class Tarefas {
             System.out.println(usuario + ", você não tem nenhuma tarefa");
         }
     }
+
+    public int getQuantidadeTarefas(){
+        return this.QuantidadeTarefa;
+    }
+
+    public int setQuantidadeTarefas(int QuantidadeTarefa){
+        return this.QuantidadeTarefa;
+    }
+
 }
