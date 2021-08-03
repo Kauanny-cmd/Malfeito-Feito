@@ -5,27 +5,45 @@ public class Main {
     // Variantes de desenvolvimento
     Scanner leitor = new Scanner(System.in);
 
-    
-    int tarefaSegunda = 0;
-    int tarefaTerca = 0;
-    int tarefaQuarta = 0;
-    int tarefaQuinta = 0;
-    int tarefaSexta = 0;
-    int tarefaSabado = 0;
-
     // String MaisTarefa = "sim";
-    int tarefas = 1;
+    boolean verTarefas = true;
 
     // Boas vindas
-    Tarefas.BoasVindas();
+    System.out.println("Seja bem vindo ao Malfeito, feito!");
+    System.out.println("\n Por favor, digite o seu nome: ");
+    String usuario = leitor.nextLine();
+    Tarefas.BoasVindas(usuario);
 
     // Add tarefas
-    Tarefas.AdicionaTarefas();
+    Tarefas t1 = new Tarefas();
+
+    while(verTarefas){
+      
+      System.out.print("|-------------------  MENU  ----------------|\n");
+      System.out.print("| Opção 1 - Criar                         |\n");
+      System.out.print("| Opção 2 - Vizualizar                    |\n");
+      ///System.out.print("| Opção 3 - Limpar a lista de tarefas     |\n");
+      System.out.print("| Opção 3 - Sair                          |\n");
+      System.out.print("|-------------------------------------------|\n");
+      int opcao = leitor.nextInt();
+      if(opcao == 1){
+        t1.AdicionaTarefas();
+      }else if(opcao == 2){
+        t1.MostrarTarefas(usuario);
+      }else if(opcao == 3){
+        verTarefas = false;
+      }
+      else{
+        System.out.println("Opção inválida!");
+      }
+      
+    }
+    
 
     // Contagem de tarefas semanais
-    /* int tarefaSemanal = tarefaDomingo + tarefaSegunda + tarefaTerca + tarefaQuarta + tarefaQuinta + tarefaSexta + tarefaSabado;
+     /* int tarefaSemanal = tarefaDomingo + tarefaSegunda + tarefaTerca + tarefaQuarta + tarefaQuinta + tarefaSexta + tarefaSabado;
 
-    boolean comTarefa = (tarefaSemanal > 0); */
+    boolean comTarefa = (tarefaSemanal > 0); */ 
     // boolean semTarefa = (!comTarefa);
 
     // Observando tarefas
