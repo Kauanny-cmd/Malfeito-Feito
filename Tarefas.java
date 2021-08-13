@@ -6,7 +6,6 @@ public class Tarefas {
     private Scanner leitor = new Scanner(System.in);
     private ArrayList<String> listaDeTarefas = new ArrayList<String>();
     private int QuantidadeTarefa;
-    private int cont = 1;
 
 
     public static void BoasVindas(String usuario) {
@@ -27,11 +26,10 @@ public class Tarefas {
     }
 
     public void MostrarTarefas(String usuario) {
-        listaDeTarefas.remove(0);
         System.out.println("\n As tarefas são:");
         if(listaDeTarefas.size() > 0){
             for (String tarefa : listaDeTarefas) {
-                System.out.println((cont++) + "º " + tarefa + "\n");
+                System.out.println(tarefa);
             }
         }else if(listaDeTarefas.size() == 0){
             System.out.println(usuario + ", você não tem nenhuma tarefa");
@@ -45,5 +43,4 @@ public class Tarefas {
     public int setQuantidadeTarefas(int QuantidadeTarefa){
         return this.QuantidadeTarefa;
     }
-
 }
