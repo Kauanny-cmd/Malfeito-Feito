@@ -11,6 +11,11 @@ public class Tarefas extends User{
         super();
     }
 
+    @Override
+    public void User() {
+        super.User();
+    }
+
     public static void BoasVindas(String usuario) {
         System.out.println("\nOlá " + usuario + "!\n");
     }
