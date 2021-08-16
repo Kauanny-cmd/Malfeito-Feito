@@ -3,9 +3,9 @@ import java.util.ArrayList;
 
 public class Tarefas {
 
-    private Scanner leitor = new Scanner(System.in);
+    private final Scanner leitor = new Scanner(System.in);
     private ArrayList<String> listaDeTarefas = new ArrayList<String>();
-    private int QuantidadeTarefa;
+    private static int QuantidadeTarefa;
 
 
     public static void BoasVindas(String usuario) {
@@ -35,6 +35,7 @@ public class Tarefas {
             System.out.println(usuario + ", você não tem nenhuma tarefa");
         }
     }
+
 
     public int getQuantidadeTarefas(){
         return this.QuantidadeTarefa;
