@@ -32,6 +32,7 @@ public class Main {
         t1.MostrarTarefas(usuario);
       }else if(opcao == 3){
         verTarefas = false;
+        System.out.println("Programa finalizado!");
       }
       else{
         System.out.println("Opção inválida!");
