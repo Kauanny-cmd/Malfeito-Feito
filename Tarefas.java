@@ -84,4 +84,8 @@ public class Tarefas extends User {
     public void User() {
         super.User();
     }
+
+    public Tarefas(String usuario){
+        this.usuario = usuario;
+    }
 }
