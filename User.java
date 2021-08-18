@@ -5,6 +5,10 @@ public class User {
         this.usuario = usuario;
     }
 
+    public void User(String usuario){
+        this.usuario = usuario;
+    }
+
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
