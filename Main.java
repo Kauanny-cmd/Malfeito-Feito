@@ -19,20 +19,23 @@ public class Main {
 
     while(verTarefas){
       
-      System.out.print("|-------------------  MENU  ----------------|\n");
+      System.out.print("\n|-----------------  MENU  ------------------|\n");
       System.out.print("| Opção 1 - Criar                         |\n");
       System.out.print("| Opção 2 - Vizualizar                    |\n");
-      ///System.out.print("| Opção 3 - Limpar a lista de tarefas     |\n");
-      System.out.print("| Opção 3 - Sair                          |\n");
+      System.out.print("| Opção 3 - Editar a lista de tarefas     |\n");
+      System.out.print("| Opção 4 - Sair                          |\n");
       System.out.print("|-------------------------------------------|\n");
       int opcao = leitor.nextInt();
       if(opcao == 1){
         t1.AdicionaTarefas();
+        System.out.println("\n Tarefas adicionadas! \n");
       }else if(opcao == 2){
         t1.MostrarTarefas(usuario);
       }else if(opcao == 3){
+        t1.EditarTarefas();
+      }else if(opcao == 4){
         verTarefas = false;
-        System.out.println("Programa finalizado!");
+        System.out.println("\nPrograma finalizado! \n");
       }
       else{
         System.out.println("Opção inválida!");
