@@ -22,7 +22,8 @@ public class Main {
       System.out.print("| Opção 1 - Criar                         |\n");
       System.out.print("| Opção 2 - Vizualizar                    |\n");
       System.out.print("| Opção 3 - Editar a lista de tarefas     |\n");
-      System.out.print("| Opção 4 - Sair                          |\n");
+      System.out.print("| Opção 4 - Excluir tarefa                |\n");
+      System.out.print("| Opção 5 - Sair                          |\n");
       System.out.print("|-------------------------------------------|\n");
       int opcao = leitor.nextInt();
       if(opcao == 1){
@@ -33,6 +34,8 @@ public class Main {
       }else if(opcao == 3){
         t1.EditarTarefas();
       }else if(opcao == 4){
+        t1.ExcluirTarefas(usuario);
+      }else if(opcao == 5){
         verTarefas = false;
         System.out.println("\nPrograma finalizado! \n");
       }

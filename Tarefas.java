@@ -25,6 +25,32 @@ public class Tarefas extends User {
         }
     }
 
+    public void ExcluirTarefas(String usuario) {
+        Scanner leitor = new Scanner(System.in);
+
+        if (listaDeTarefas.size() == 0) {
+            System.out.println("Primeiro, adicione uma tarefa para excluí-la");
+        } else {
+
+            int cont = 1;
+            System.out.println("\n As tarefas são:");
+            for (String tarefa : listaDeTarefas) {
+                System.out.println(cont + " " + tarefa);
+                cont++;
+            }
+
+            System.out.println("\n Insira o número da tarefa para ser excluída: ");
+            int indice = leitor.nextInt();
+
+            if (indice <= 0 || indice >= listaDeTarefas.size()) {
+                System.out.println("Por favor, insira um número de tarefa que tenha na lista! Tente novamente");
+            }else {
+                listaDeTarefas.remove(indice-1);
+                System.out.println("\n A tarefa foi excluída com sucesso!\n");
+            }
+        }
+    }
+
     public void EditarTarefas() {
         Scanner leitor = new Scanner(System.in);
 
@@ -42,7 +68,7 @@ public class Tarefas extends User {
             System.out.println("\n Insira o número da tarefa para ser modificado: ");
             int indice = leitor.nextInt();
 
-            if (indice < listaDeTarefas.size() || indice > listaDeTarefas.size()) {
+            if (indice <= 0 || indice >= listaDeTarefas.size()) {
                 System.out.println("Por favor, insira um número de tarefa que tenha na lista! Tente novamente");
             } else {
                 System.out.println("E agora, insira o que deseja mudar: ");
@@ -85,7 +111,7 @@ public class Tarefas extends User {
         super.User();
     }
 
-    public Tarefas(String usuario){
+    public Tarefas(String usuario) {
         this.usuario = usuario;
     }
 }
