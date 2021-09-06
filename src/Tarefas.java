@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -16,12 +18,17 @@ public class Tarefas extends User {
         System.out.println("\n Quantas tarefas você deseja adicionar?");
         QuantidadeTarefa = leitor.nextInt();
 
-        System.out.println("Perfeito!");
-        System.out.println("\nAgora, escreva, quais são elas:");
+        if (QuantidadeTarefa <= 0) {
+            System.out.println("Por favor, insira um valor maior que 0");
+        } else {
+            System.out.println("Perfeito!");
+            System.out.println("\nAgora, escreva, quais são elas:");
 
-        for (int i = 0; i < QuantidadeTarefa; i++) {
-            Scanner scan = new Scanner(System.in);
-            listaDeTarefas.add(scan.nextLine());
+            for (int i = 0; i < QuantidadeTarefa; i++) {
+                Scanner scan = new Scanner(System.in);
+                listaDeTarefas.add(scan.nextLine());
+            }
+            System.out.println("\n Tarefas adicionadas! \n");
         }
     }
 
@@ -42,10 +49,10 @@ public class Tarefas extends User {
             System.out.println("\n Insira o número da tarefa para ser excluída: ");
             int indice = leitor.nextInt();
 
-            if (indice <= 0 || indice >= listaDeTarefas.size()) {
+            if (indice <= 0 || indice > listaDeTarefas.size()) {
                 System.out.println("Por favor, insira um número de tarefa que tenha na lista! Tente novamente");
-            }else {
-                listaDeTarefas.remove(indice-1);
+            } else {
+                listaDeTarefas.remove(indice - 1);
                 System.out.println("\n A tarefa foi excluída com sucesso!\n");
             }
         }
@@ -68,7 +75,7 @@ public class Tarefas extends User {
             System.out.println("\n Insira o número da tarefa para ser modificado: ");
             int indice = leitor.nextInt();
 
-            if (indice <= 0 || indice >= listaDeTarefas.size()) {
+            if (indice <= 0 || indice > listaDeTarefas.size()) {
                 System.out.println("Por favor, insira um número de tarefa que tenha na lista! Tente novamente");
             } else {
                 System.out.println("E agora, insira o que deseja mudar: ");

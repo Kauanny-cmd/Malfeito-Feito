@@ -1,4 +1,6 @@
-public abstract class User implements TarefasMod {
+package src;
+
+public abstract class User implements TarefasMod{
     public String usuario;
 
     public void User(){
