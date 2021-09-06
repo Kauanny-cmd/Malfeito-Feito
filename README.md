@@ -6,7 +6,7 @@
 
 ### Especificações:
 * O sistema contará com uma interface interativa, onde o usuário pode "cadastrar" ou adicionar a sua tarefa, na qual deseja executá-la durante o mesmo dia ou em decorer dos demais;
-* Além disso, contaremos com a opção de personalizar a nossa tarefa, como por exemplo, a possibilidade de adicionarmos cores em cada afazer;
+* Além disso, em possíveis novas versões, contaremos com a opção de personalizar a nossa tarefa, como por exemplo, a possibilidade de adicionarmos cores em cada afazer;
 * E por fim, talvez a opção de adição de membros no desenvolvimento do ofício.
 
 > V. Kauanny®
