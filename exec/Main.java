@@ -1,6 +1,7 @@
-package src;
+package exec;
 
 import java.util.Scanner;
+import clas.Tarefas;
 
 public class Main {
   public static void main(String[] args) {

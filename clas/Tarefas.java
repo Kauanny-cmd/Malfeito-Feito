@@ -1,4 +1,4 @@
-package src;
+package clas;
 
 import java.util.Scanner;
 import java.util.ArrayList;
